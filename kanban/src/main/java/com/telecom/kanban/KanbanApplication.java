@@ -40,9 +40,9 @@ public class KanbanApplication {
 
 	public void populateDevelopers(DeveloperService developerService){
 		List<Developer> developers = new ArrayList<>();
-		developers.add(new Developer("Quentin","Viricel","psswd","quentin.viricel@email.fr",new Date()));
-		developers.add(new Developer("Valentin","Descomps","psswd","valentin.descomps@email.fr",new Date()));
-		developers.add(new Developer("Aymeric","Faure","psswd","aymeric.faure@email.fr",new Date()));
+		developers.add(new Developer("Usain","Bolt","psswd","toofast@email.fr",new Date()));
+		developers.add(new Developer("Martin","Fourcade","psswd","dansle1000@email.fr",new Date()));
+		developers.add(new Developer("Fici","Flex","psswd","trop4@email.fr",new Date()));
 
 		for(Developer developer : developers){
 			developerService.addDeveloper(developer);
@@ -50,9 +50,9 @@ public class KanbanApplication {
 	}
 	public void populateTasks (TaskService taskService){
 		List<Task>tasks= new ArrayList<>();
-		tasks.add(new Task("Task1",1,0,new Date()));
-		tasks.add(new Task("Task2",1,0,new Date()));
-		tasks.add(new Task("Task3",1,0,new Date()));
+		tasks.add(new Task("Task 1",1,0,new Date()));
+		tasks.add(new Task("Task 2",1,0,new Date()));
+		tasks.add(new Task("Task 3",1,0,new Date()));
 
 		for (Task task : tasks){
 			taskService.addTask(task);
